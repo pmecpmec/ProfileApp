@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  background-color: #fcfbfb;
+  font-family: Arial, sans-serif;
+}
+.header {
+   display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 10px;
+  background-color: #08000e;
+  color: white;
+}
+.header img {
+  height: 50px;
+}
+.header nav {
+
+  display: flex;
+  gap: 10px;
+}
+.header button {
+  position: relative;
+  cursor: pointer;
+ background-color: #f4f1f7;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background: linear-gradient(-45deg, #7c18df 0%, #00dbde 100%);
+}
+.header button:hover::after {
+  filter: blur(30px);
+}
+.header button:hover::before{
+transform: rotate(-180deg);
+}
+h1, h3 {
+  text-align: center;
+}
