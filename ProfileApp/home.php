@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <header class="header">
+<<<<<<< HEAD
         <img src="./img/logo-no-background.png" alt="Logo">
         <center><a href="home.html"><button>Home</button></a>
             <a href="aboutMe.html"><button>About Me</button></a>
@@ -16,21 +17,15 @@
     </div>
     </header>
     <title>KEEP</title>
+=======
+        <?php
+        include 'nav/nav.php';
+        ?>
+    </header>
+    </div>
+    </header>
+>>>>>>> 8154ae4f4b84b79f7f4fdbab7abf28cba422bb5a
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f2ef;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #393c3e;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
         .container {
             max-width: 660px;
             margin: 0 auto;
@@ -86,9 +81,6 @@
 </head>
 
 <body>
-    <header>
-        <h1>KEEP</h1>
-    </header>
     <div class="container">
         <div class="post">
             <header>
