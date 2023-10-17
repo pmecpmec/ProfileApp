@@ -4,8 +4,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <header class="header">
-    <?php require 'navigation/nav.php'
-    ?>
+
   </header>
   <b>
     <h1>Welkom bij onze website!</h1>
@@ -21,7 +20,7 @@
     </center>
   </h3></br>
   <br>
-  <center><img src="./img/logo-no-background.png"></center><br>
+  <center><img src="./img/profileplus-high.png"></center><br>
 
 </body>
 <footer>

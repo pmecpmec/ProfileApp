@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #fcfbfb;
+  background-color: #f0f2f5;
   font-family: Arial, sans-serif;
 }
 .header {
@@ -22,7 +22,7 @@ body {
 .header button {
   position: relative;
   cursor: pointer;
- background-color: #f4f1f7;
+ background-color: #f5f1f7;
   margin: 10px;
   padding: 10px 20px;
   font-size: 15px;
