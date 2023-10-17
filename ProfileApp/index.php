@@ -3,9 +3,6 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
-  <header class="header">
-
-  </header>
 
   <title>KEEP</title>
   <b>
@@ -18,12 +15,12 @@
   <form action="index.php" method="post">
     <div class="login">
       <h1> Login to start your journey</h1>
-    
+
       <label for="email"><b> email</label></b>
-      <input type="email" placeholder="Enter email" name="email"  id="email" required>
+      <input type="email" placeholder="Enter email" name="email" id="email" required>
 
       <label for="password"><b> password</label></b>
-      <input type="password" placeholder="Enter password" name="password"  id="password" required>
+      <input type="password" placeholder="Enter password" name="password" id="password" required>
 
       <button type="submit" class="loginbtn">log in</button>
 
