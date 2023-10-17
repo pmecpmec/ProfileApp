@@ -4,8 +4,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <header class="header">
-    <?php require 'navigation/nav.php'
-    ?>
+
   </header>
 
   <title>KEEP</title>
