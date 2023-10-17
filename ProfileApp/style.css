@@ -37,13 +37,73 @@ transform: rotate(-180deg);
 h1, h3 {
   text-align: center;
 }
-.login-container{
-  display: grid;
-  grid-column: 200px 200px;;
-  border-style: solid;
-  border-color: #666666;
-  margin-right: 200px;
-  margin-left: 750px;
-  margin-top: 150px;
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #008080;
   padding: 10px;
+  margin: 10px;
+  width: 500px;
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.login input[type=email], .login input[type=password] {
+  width: 350px;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+.login .loginbtn{
+  width: 100px;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background-color: red ;
+  border-radius: 20px;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #7c18df 0%, #00dbde 100%)
+}
+
+
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #008080;
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+ 
+
+}
+
+.register input[type=name], .register input[type=email], .register input[type=password] {
+  width: 350px;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 20px;
+
+}
+.register .registerbtn{
+  width: 100px;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background-color: red ;
+  border-radius: 20px;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #7c18df 0%, #00dbde 100%)
 }

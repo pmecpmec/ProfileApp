@@ -14,20 +14,6 @@
     </header>
     <title>KEEP</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f2ef;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #393c3e;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
         .container {
             max-width: 660px;
             margin: 0 auto;
@@ -83,9 +69,6 @@
 </head>
 
 <body>
-    <header>
-        <h1>KEEP</h1>
-    </header>
     <div class="container">
         <div class="post">
             <header>
