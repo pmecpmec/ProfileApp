@@ -35,5 +35,23 @@ body {
 transform: rotate(-180deg);
 }
 h1, h3 {
-  text-align: center;
+    text-align: center;
 }
+
+
+/* AboutMe CSS 8 */
+
+    /* grid */
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
