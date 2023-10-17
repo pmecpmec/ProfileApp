@@ -25,11 +25,9 @@
       <label for="password"><b> password</label></b>
       <input type="password" placeholder="Enter password" name="password"  id="password" required>
 
-      <button type="submit" class="loginbtn">log in</button>
+      <button type="submit" id="btn">log in</button>
 
-      <div class="container signin">
-        <p> not registered yet ? <a href="register.php">sign in </a> </p>
-      </div>
+      <p> not registered yet ? <button id="btn"><a href="register.php">sign in</a></p> 
     </div>
   </form>
 </body>
