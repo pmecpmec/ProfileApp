@@ -7,20 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <header class="header">
-<<<<<<< HEAD
-        <?php
-        include 'nav/nav.php';
-=======
         <?php require 'navigation/nav.php'
->>>>>>> 136fe41699756b220508bf36867e8b0102aa044e
         ?>
     </header>
     </div>
     </header>
-<<<<<<< HEAD
-=======
     <title>KEEP</title>
->>>>>>> 136fe41699756b220508bf36867e8b0102aa044e
     <style>
         .container {
             max-width: 660px;

@@ -12,17 +12,34 @@
 </header>
 
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form action="login_process.php" method="post">
-      <label for="username">Username:</label>
-      <input type="text" name="username" id="username" required />
-      <br />
-      <label for="password">Password:</label>
-      <input type="password" name "password" id="password" required />
-      <input type="submit" value="Login" />
-    </form>
-  </div>
+<form action="index.html">
+  <div class="register">   
+  <h1>Register</h1>
+<p> Please Fill in this form to create an account.</p>
+
+<label for="name"><b> Name</label></b>
+<input type="name" placeholder="Enter Name" name="name"  id=" name"required>
+
+<label for="last name"><b> Last name</label></b>
+<input type="last name" placeholder="Enter Last name" name="last name"  id="last name" required>
+
+<label for="email"><b> email</label></b>
+<input type="email" placeholder="Enter email" name="email"  id="email" required>
+
+<label for="password"><b> password</label></b>
+<input type="password" placeholder="Enter password" name="password"  id="password" required>
+
+<label for="password-repeat"><b> Repeat password</label></b>
+<input type="password" placeholder="Repeat password" name="password-repeat"  id="password-repeat" required>
+
+
+
+<button type="sumbit" class="registerbtn">Register</button>
+</div>
+<div class="container signin">
+  <p> already have an account <a href="index.html">sign in </a> </p>
+</div>
 </body>
+
 
 </html>
