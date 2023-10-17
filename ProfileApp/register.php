@@ -12,7 +12,7 @@
 </header>
 
 <body>
-<form action="index.html">
+<form action="index.php">
   <div class="register">   
   <h1>Register</h1>
 <p> Please Fill in this form to create an account.</p>
@@ -21,7 +21,7 @@
 <input type="name" placeholder="Enter Name" name="name"  id=" name"required>
 
 <label for="last name"><b> Last name</label></b>
-<input type="last name" placeholder="Enter Last name" name="last name"  id="last name" required>
+<input type="name" placeholder="Enter Last name" name="last name"  id="last name" required>
 
 <label for="email"><b> email</label></b>
 <input type="email" placeholder="Enter email" name="email"  id="email" required>
@@ -37,7 +37,7 @@
 <button type="sumbit" class="registerbtn">Register</button>
 </div>
 <div class="container signin">
-  <p> already have an account <a href="index.html">sign in </a> </p>
+  <p> already have an account <a href="index.php">sign in </a> </p>
 </div>
 </body>
 
