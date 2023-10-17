@@ -14,7 +14,7 @@ body {
 .header img {
   height: 50px;
 }
-.header nav {
+.nav {
 
   display: flex;
   gap: 10px;
@@ -36,4 +36,14 @@ transform: rotate(-180deg);
 }
 h1, h3 {
   text-align: center;
+}
+.login-container{
+  display: grid;
+  grid-column: 200px 200px;;
+  border-style: solid;
+  border-color: #666666;
+  margin-right: 200px;
+  margin-left: 750px;
+  margin-top: 150px;
+  padding: 10px;
 }
