@@ -7,10 +7,11 @@
     <nav>
       <img src="./img/logo-no-background.png" class="header-logo" alt="Logo">
       <center><a href="index.php"><button>Home</button></a>
-        <a href="aboutMe.php"><button>About Me</button></a>
-        <a href="experience.php"><button>My Experience</button></a>
-        <a href="work.php"><button>My Work</button></a>
-        <a href="contact.php"><button>Contact Me</button></a>
+        <a href="login.php"><button>login</button></a>
+        <a href="register.php"><button>register</button></a>
+        <a href="myprojects.php"><button>My Work</button></a>
+        <a href="profiel.php"><button>profiel</button></a>
+        <a href="settings.php"><button>About Me</button></a>
       </center>
     </nav>
   </div>
