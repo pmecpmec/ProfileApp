@@ -4,13 +4,17 @@
 <title>About Me</title>
 <header class="header">
   <div id="header">
-    <nav>
+    <nav class="navigation">
       <img src="./img/logo-no-background.png" class="header-logo" alt="Logo">
-      <center><a href="index.php"><button>Home</button></a>
-        <a href="aboutMe.php"><button>About Me</button></a>
-        <a href="experience.php"><button>My Experience</button></a>
-        <a href="work.php"><button>My Work</button></a>
-        <a href="contact.php"><button>Contact Me</button></a>
+      <center>
+        <ul>
+          <li><a href="home.php"><button>Home</button></a></li>
+          <li><a href="aboutMe.php"><button>About Me</button></a></li>
+          <li><a href="experience.php"><button>My Experience</button></a></li>
+          <li><a href="work.php"><button>My Work</button></a></li>
+          <li><a href="contact.php"><button>Contact Me</button></a></li>
+          <li><a href="settings.php"><button>Settings</button></li>
+        </ul>
       </center>
     </nav>
   </div>
