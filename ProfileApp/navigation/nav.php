@@ -9,10 +9,12 @@
       <center>
         <ul>
           <li><a href="home.php"><button>Home</button></a></li>
-          <li><a href="aboutMe.php"><button>About Me</button></a></li>
-          <li><a href="experience.php"><button>My Experience</button></a></li>
-          <li><a href="work.php"><button>My Work</button></a></li>
-          <li><a href="contact.php"><button>Contact Me</button></a></li>
+          <li><a href="login.php"><button>login</button></a></li>
+          <li><a href="register.php"><button>register</button></a></li>
+          <li><a href="myprojects.php"><button>My Work</button></a></li>
+          <li><a href="profiel.php"><button>profiel</button></a>
+            <a href="settings.php"><button>About Me</button></a>
+          </li>
           <li><a href="settings.php"><button>Settings</button></li>
         </ul>
       </center>
