@@ -1,11 +1,11 @@
 <?php
 
 
-$App = require 'private.php';
+$App = require 'Database/private.php';
 $dbconn = $App['database'];
 
 $routes = [
-    "/" => "controllers/index.php",
+    "/" => "controllers/contr.index.php",
     "/home" => "controllers/home.php",
     "/profiel" => "controllers/profiel.php",
    "/myprojects" => "controllers/myprojects.php",
