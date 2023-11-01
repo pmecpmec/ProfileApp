@@ -26,27 +26,17 @@ nav ul {
   padding: 0;
 }
 
-nav ul li:nth-child(1) a {
-  background-color: #889BE7; /* Vista Blue */
-}
-
-nav ul li:nth-child(2) a {
-  background-color: #9EB9D4; /* Powder Blue */
-}
-
-nav ul li:nth-child(3) a {
-  background-color: #C9F1BC; /* Tea Green */
-}
-
-
 nav ul li {
   display: inline;
   margin-right: 20px; /* Adjust the spacing between buttons */
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #fff;
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: 500px;
+  margin: 25px;
+  transition: all 0.45s ease;
 }
 
 nav ul li:nth-child(1) a {
@@ -408,4 +398,32 @@ img.profilePicture {
 .button-name:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+/* settings.php */
+.settings-container {
+  background-color: #5671DC; /* Royal Blue */
+  border: 2px solid #889BE7; /* Vista Blue for the border */
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(12, 22, 24, 0.2); /* Shadow with Rich Black color */
+}
+
+.white-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 100px;
+}
+
+a.profileSettings, a.loginSecurity {
+    display: block;
+    text-decoration: none;
+    color: #0C1618; /* Text color in Rich Black */
+    margin: 10px 0;
+}
+
+a.profileSettings:hover, a.loginSecurity:hover {
+    color: whitesmoke;
+    transition: all 0.45s ease; /* Vista Blue */
 }
