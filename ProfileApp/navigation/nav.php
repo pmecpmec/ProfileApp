@@ -4,10 +4,9 @@
 <title>About Me</title>
 <header>
   <div class="logo">
-
     <img src="./img/logo-no-background.png" class="header-logo" alt="Logo">
+    </div>
     <nav>
-      <center>
         <ul>
           <li><a href="home.php"><button>Home</button></a></li>
           <li><a href="login.php"><button>login</button></a></li>
@@ -16,7 +15,6 @@
           <li><a href="profiel.php"><button>Profile</button></a></li>
           <li><a href="settings.php"><button>Settings</button></li>
         </ul>
-      </center>
     </nav>
-  </div>
+  
 </header>

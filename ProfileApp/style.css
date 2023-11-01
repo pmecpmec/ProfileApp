@@ -6,41 +6,59 @@ body {
 }
 
 /* header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #5671DC;
-  color: white;
+header {
+  background-color: #5671DC; /* Royal Blue */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.header-logo {
-  max-width: 100px;
+.logo img {
+  max-width: 100px; /* Adjust the width as needed */
   height: auto;
-  left: 10px;
 }
 
-.navigation ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navigation ul li {
+nav ul li:nth-child(1) a {
+  background-color: #889BE7; /* Vista Blue */
+}
+
+nav ul li:nth-child(2) a {
+  background-color: #9EB9D4; /* Powder Blue */
+}
+
+nav ul li:nth-child(3) a {
+  background-color: #C9F1BC; /* Tea Green */
+}
+
+
+nav ul li {
   display: inline;
   margin-right: 20px; /* Adjust the spacing between buttons */
 }
 
-
-.navigation li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.navigation a {
+nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+nav ul li:nth-child(1) a {
+  background-color: #889BE7; /* Vista Blue */
+}
+
+nav ul li:nth-child(2) a {
+  background-color: #9EB9D4; /* Powder Blue */
+}
+
+nav ul li:nth-child(3) a {
+  background-color: #C9F1BC; /* Tea Green */
 }
 
 .header button {
