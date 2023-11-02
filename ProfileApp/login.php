@@ -1,4 +1,8 @@
+<?php
 
+session_start();
+include_once "login.inc.php";
+?>
 
 
 <!DOCTYPE html>
@@ -7,7 +11,7 @@
     <title>Inloggen</title>
 </head>
 <body>
-    <form action="include/login.inc.php"method="post">
+    <form action="login.php"method="post">
     <label for="name">Name:</label>
         <input type="text" name="username" placeholder="username"><br>
         <label for="pwd">Wachtwoord:</label><br>
