@@ -1,0 +1,40 @@
+
+/* Home Styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',
+    sans-serif;
+}
+
+body {
+    background:#000;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.profile {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 600px;
+  height: 600px;
+  text-align: left;
+}
+
+.profile h3, .profile p {
+  color: azure;
+  margin: 15px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
