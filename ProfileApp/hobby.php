@@ -22,22 +22,11 @@ $hobbies = getHobbies($username);
 <body>
 <h1>Your Hobbies</h1>
 
-<!--<ul>-->
-<?php //foreach ($hobbies as $hobby): ?>
-<!--    <li>--><?php //echo htmlspecialchars($hobby['hobby_name']); ?><!--</li>-->
-<?php //endforeach; ?>
-<!--</ul>-->
-
+<ul>
 <?php foreach ($hobbies as $hobby): ?>
-    <div class="card">
-        <div class="container">
-            <b class="title">Hobby's</b>
-            <p><?php echo htmlspecialchars($hobby['hobby_name']); ?></p>
-            <p><?php echo $hobby['hobby_year']; ?></p>
-            <p>Plaats</p>
-        </div>
-    </div>
+    <li><?php echo htmlspecialchars($hobby['hobby_name']); ?></li>
 <?php endforeach; ?>
+</ul>
 
 <form method="post">
     <label for="new_hobby">Add a new hobby:</label>
