@@ -1,51 +1,28 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-session_start();
+require_once 'db.inc.php';
 
-if($_SERVER["REQUEST_METHOD"]== "POST"){
-    $username = $_POST["username"];
-    $pwd = $_POST["pwd"];
-  
-    if(empty($username)or empty($pwd)){
-        die("Please fill in all fields!");
-    }
-    
-    try{
-        require_once 'db.inc.php';
-    
-        $query = "SELECT * FROM users WHERE username = ?;";
-        
-        $stmt = $pdo->prepare($query);
-        
-        $stmt->execute([ $username ]);
+function loginUser($username, $pwd) {
+    global $pdo;
 
-        if($stmt->rowCount() == 1){
-            // User found
-            $user = $stmt->fetch();
-            // Verify the password
-            if (password_verify($pwd, $user['pwd'])) {
-                // Password is correct, start a session and redirect to a secure page
-                $_SESSION['loggedin'] = true;
-                $_SESSION['username'] = $user['username']; // Store the user's name in a session variable
-                header("location: ../home.php");
-                die();
-            } else {
-                // Password is incorrect, show an error message
-                echo "Invalid username or password.";
-            }
+    $stmt = $pdo->prepare("SELECT username, pwd FROM users WHERE username = ? AND pwd = ?;");
+    $stmt->execute([$username, $pwd]);
+
+    if($stmt->rowCount() == 1){
+        // User found
+        $user = $stmt->fetch();
+        // Verify the password
+        if (password_verify($pwd, $user['pwd'])) {
+            // Password is correct
+          
+            return true;
         } else {
-            // No user found, show an error message
-            echo "Invalid username or password.";
+            // Password is incorrect
+            return false;
         }
-        
-        die();
-    }catch (PDOException $e) {
-        echo "connection failed:" . $e->getMessage();
-        return;
+    } else {
+        // No user found
+        return false;
     }
-}else{
-    header("Location: ../index.php");
-    die();
 }
+
+?>

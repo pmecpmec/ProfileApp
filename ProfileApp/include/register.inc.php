@@ -1,52 +1,68 @@
+//register.php
 <?php
-session_start();
-
-if($_SERVER["REQUEST_METHOD"]== "POST"){
-    $username = $_POST["username"];
-    $last_name= $_POST["last_name"];
-    $pwd = $_POST["pwd"];
-    $pwd_confirm = $_POST["pwd_confirm"];
-    $email = $_POST["email"];
-   
-    if(empty($username)or empty($last_name) or empty($pwd) or empty($pwd_confirm)or empty($email)){
-        $_SESSION['error'] = "Please fill in all fields!";
-        header("Location: ../index.php");
-        exit();
+    //start PHP session
+    session_start();
+  
+    //check if register form is submitted
+    if(isset($_POST['register'])){
+        //assign variables to post values
+        $username = $_POST['username'];
+        $pwd = $_POST['pwd'];
+        $pwd_confirm = $_POST['pwd_confirm'];
+        $email = $_POST['email'];
+        
+  
+        //check if password matches confirm password
+        if($password != $confirm){
+            //return the values to the user
+            $_SESSION['username'] = $username;
+            $_SESSION['pwd'] = $pwd;
+            $_SESSION['pwd_confirm'] = $pwd_confirm;
+  
+            //display error
+            $_SESSION['error'] = 'Passwords did not match';
+        }
+        else{
+            //include our database connection
+            include 'db.inc.php';
+  
+            //check if the email is already taken
+            $stmt = $pdo->prepare('SELECT * FROM users WHERE username = :username');
+            $stmt->execute(['username' => $username]);
+  
+            if($stmt->rowCount() > 0){
+                //return the values to the user
+                $_SESSION['username'] = $username;
+                $_SESSION['pwd'] = $pwd;
+                $_SESSION['pwd_confirm'] = $pwd_confirm;
+  
+                //display error
+                $_SESSION['error'] = 'username already taken';
+            }
+            else{
+                //encrypt password using password_hash()
+                $pwd = password_hash($pwd, PASSWORD_DEFAULT);
+  
+                //insert new user to our database
+                $stmt = $pdo->prepare('INSERT INTO users (username, pwd) VALUES (:username, :pwd)');
+  
+                try{
+                    $stmt->execute(['username' => $username, 'pwd' => $pwd]);
+  
+                    $_SESSION['success'] = 'User verified. You can <a href="index.php">login</a> now';
+                }
+                catch(PDOException $e){
+                    $_SESSION['error'] = $e->getMessage();
+                }
+  
+            }
+  
+        }
+  
+    }
+    else{
+        $_SESSION['error'] = 'Fill up registration form first';
     }
     
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $_SESSION['error'] = "Invalid email address.";
-        header("Location: ../index.php");
-        exit();
-    }
-   
-    if($pwd!==$pwd_confirm){
-        $_SESSION['error'] = "Password does not match";
-        header("Location: ../index.php");
-        exit();
-    }
-
-    header("location:../login.php");
-
-
-    try{
-        require_once 'db.inc.php';
-    
-        $query = "INSERT INTO users (username,last_name,pwd,pwd_confirm,email)VALUES
-        (?,?,?,?,?);";
-        
-        $stmt = $pdo->prepare($query);
-        
-        $stmt->execute([$username,$last_name, $pwd, $pwd_confirm,$email]);
-        
-        header("Location: ../login.php");
-        die();
-        
-    }catch (PDOException $e) {
-        echo "connection failed:" . $e->getMessage();
-        return;
-    }
-}else{
-    header("Location: ../index.php");
-    die();
-}
+    //redirect to index.php
+    header('location: index.php');
