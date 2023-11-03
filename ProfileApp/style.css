@@ -15,9 +15,10 @@ body {
   color: white;
 }
 
-.header img {
+.header-logo {
   max-width: 100px;
   height: auto;
+  left: 10px;
 }
 
 .navigation ul {
@@ -25,6 +26,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.navigation ul li {
+  display: inline;
+  margin-right: 20px; /* Adjust the spacing between buttons */
+}
+
 
 .navigation li {
   display: inline;
