@@ -17,33 +17,41 @@
         <?php
         $profiles = array(
           array(
-            'name' => 'Profiel 1',
+            'name' => 'Profile 1',
             'image' => 'https://img.demorgen.be/412040aa02290eb651f309d87d1e26079f7e6f99/profielfoto-op-facebook-beinvloedt-wel-degelijk-jouw-jobkansen',
             'description' => 'Beschrijving van profiel 1',
             'location' => 'Almere, Netherlands',
             'occupation' => 'Web Developer',
             'education' => 'Bachelor in Computer Science',
-            'interests' => 'Programming, Hiking, Photography'
+            'interests' => 'Programming, Hiking, Photography',
+            'projects' => array(
+                'Project 1: UI/UX Redesign',
+                'Project 2: Mobile App Design',)
            
         ),
         array(
-            'name' => 'Profiel 2',
+            'name' => 'Profile 2',
             'image' => 'https://img.demorgen.be/412040aa02290eb651f309d87d1e26079f7e6f99/profielfoto-op-facebook-beinvloedt-wel-degelijk-jouw-jobkansen',
             'description' => 'Beschrijving van profiel 2',
             'location' => 'Amsterdam, Netherlands',
             'occupation' => 'UX Designer',
             'education' => 'Master in Design',
-            'interests' => 'User Experience, Traveling, Music'
+            'interests' => 'User Experience, Traveling, Music',
+            'projects' => array(
+                'Project 1: UI/UX Redesign',
+                'Project 2: Mobile App Design',)
         ),
         array(
-            'name' => 'Profiel 3',
+            'name' => 'Profile 3',
             'image' => 'https://img.demorgen.be/412040aa02290eb651f309d87d1e26079f7e6f99/profielfoto-op-facebook-beinvloedt-wel-degelijk-jouw-jobkansen',
             'description' => 'Beschrijving van profiel 3',
             'location' => 'Rotterdam, Netherlands',
             'occupation' => 'Data Scientist',
             'education' => 'Ph.D. in Data Science',
-            'interests' => 'Data Analysis, Cooking, Reading'
-            
+            'interests' => 'Data Analysis, Cooking, Reading',
+            'projects' => array(
+                'Project 1: UI/UX Redesign',
+                'Project 2: Mobile App Design')
         )
     );
 
@@ -56,6 +64,13 @@
         echo '<p><strong>Occupation:</strong> ' . $profile['occupation'] . '</p>';
         echo '<p><strong>Education:</strong> ' . $profile['education'] . '</p>';
         echo '<p><strong>Interests:</strong> ' . $profile['interests'] . '</p>';
+        echo '<div class="projects">';
+        echo '<h4>Projects:</h4>';
+        foreach ($profile['projects'] as $project) {
+            echo '<p>' . $project . '</p>';
+        }
+        echo '</div>';
+        echo '</div>';
         echo '</div>';
        
     }

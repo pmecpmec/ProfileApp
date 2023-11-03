@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',
-    sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 body {
@@ -15,26 +14,48 @@ body {
 
 .profile-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+  justify-content: space-between;
+  margin: 50px;
 }
 
 .profile {
-  border: 1px solid #ccc;
+  border: 2px solid #C9F1BC;
   padding: 10px;
-  width: 600px;
-  height: 600px;
+  width: 30%;
   text-align: left;
+  background-color: #5671DC; 
+  color: white;
+  margin: 10px;
 }
 
 .profile h3, .profile p {
-  color: azure;
-  margin: 15px;
+  color: #C9F1BC;
+  margin: 10px 0;
 }
 
 .profile img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  margin-right: 10px;
 }
+
+.projects {
+  background-color: #889BE7 ;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.projects h4 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.projects p {
+  color: #fff;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
 
