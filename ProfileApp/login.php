@@ -61,7 +61,6 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
 <div class="container">
     
     <h1 class="text-center" style="margin-top:30px;">Login</h1>
-    <hr>
 </div>
 
 <!-- Form for logging in -->
@@ -79,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
          unset($_SESSION['password']) ?>" placeholder="Input password" required>
     </div>
    
-    <hr>
+
    
     <div>
         <button type="submit" name="login">Login</button>

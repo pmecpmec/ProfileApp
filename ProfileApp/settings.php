@@ -14,10 +14,11 @@
   </button>
 </head>
 
+<div class="settings"></div>
 <body>
-  <a class="profileSettings" href="profile.php">Profile Settings</a>
+  <a href="profile.php">Profile Settings</a>
   <br>
-  <a class="loginSecurity" href="loginSecurity.php">Login & Security</a>
+  <a href="loginSecurity.php">Login & Security</a>
 </body>
-
+</div>
 </html>
