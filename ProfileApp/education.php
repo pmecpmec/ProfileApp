@@ -36,18 +36,17 @@ $Educations = getEducation($username);
 <h1>Your education</h1>
 
     <!-- Form for adding and deleting education -->
-    <form method="post">
-        <!-- Input field for adding new education -->
-        <label for="new_education">Add a new education:</label>
-        <input type="text" id="new_education" name="new_education">
-        <button type="submit" value="Add">Add</button>
+ <form method="post" class="formam">
+    <!-- Input field for adding new education -->
+    <label for="new-education">Add a new education:</label>
+    <input type="text" id="new-education" name="new-education">
+    <button type="submit" name="add-education" class="common-button">Add</button>
 
-        <!-- Input field for deleting education -->
-        <label for="delete_education">Delete education:</label>
-        <input type="text" id="delete_education" name="delete_education">
-        <button type="submit" value="Delete" class="deletebutton">Delete</button>
-    </form>
-
+    <!-- Input field for deleting education -->
+    <label for="delete-education">Delete education:</label>
+    <input type="text" id="delete-education" name="delete-education">
+    <button type="submit" name="delete-education" class="common-button deletebutton">Delete</button>
+</form>
 <!-- List of educations -->
 <ul classname="educationlist">
 <!-- PHP code to display each education -->
