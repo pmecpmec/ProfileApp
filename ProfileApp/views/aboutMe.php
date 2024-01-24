@@ -7,7 +7,7 @@ global $hobbies, $Educations, $users;
 
 ?>
 
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="../style.css">

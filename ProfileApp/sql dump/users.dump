@@ -1,0 +1,43 @@
+-- MySQL dump 10.13  Distrib 8.0.18, for Win64 (x86_64)
+--
+-- Host: localhost    Database: users
+-- ------------------------------------------------------
+-- Server version	5.5.5-10.4.28-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `education`
+--
+
+DROP TABLE IF EXISTS `education`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `education` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(60) DEFAULT NULL,
+  `education_name` varchar(255) DEFAULT NULL,
+  `year` year(4) DEFAULT NULL,
+  `diplomat` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `education`
+--
+
+LOCK TABLES `education` WRITE;
+/*!40000 ALTER TABLE `education` DISABLE KEYS */;
+INSERT INTO `education` VALUES (1,NULL,'schaatsen',NULL,NULL),(2,NULL,'schaatsen',NULL,NULL),(3,NULL,'schaatsen',NULL,NULL),(4,NULL,'schaatsen',NULL,NULL),(5,NULL,'schaatsen',NULL,NULL),(6,NULL,'schaatsen',NULL,NULL),(7,NULL,'schaatsen',NULL,NULL),(10,'David','Doctor 2',NULL,NULL),(13,'David','a7eeh',NULL,NULL),(14,'David','hobaa la la',NULL,NULL),(15,'David','hobaa la la',NULL,NULL),(16,'David','hobaa la la',NULL,NULL),(17,'David','hobaa la la',NULL,NULL),(18,'David','hobaa la la',NULL,NULL),(19,'David','hobaa la la',NULL,NULL),(20,'David','hobbaaaa',NULL,NULL),(21,'David','hobbaaaa',NULL,NULL),(22,'David','hobbaaaa',NULL,NULL),(23,'David','hobbaaaa',NULL,NULL),(24,NULL,'Doctor',NULL,NULL),(25,NULL,'Dasdasd',NULL,NULL),(26,'David','hobbaaa',NULL,NULL),(27,'David','hobbaaa',NULL,NULL),(28,'David','hobbaaa',NULL,NULL),(29,'David','hobbaaa',NULL,NULL);
+/*!40000 ALTER TABLE `education` ENABLE KEYS */;
+UNLOCK TABLES;
