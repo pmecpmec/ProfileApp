@@ -7,7 +7,7 @@ $dsn= "mysql:host=localhost;dbname=users";
 $dbusername="root";
 
 // This is the password to get into your database
-$dbpass="";
+$dbpass="root";
 
 // Now we try to connect to the database
 try {

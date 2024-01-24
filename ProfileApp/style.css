@@ -25,7 +25,8 @@ body {
 
 .navigation ul li {
   display: inline;
-  margin-right: 20px; /* Adjust the spacing between buttons */
+  margin-right: 20px;
+  margin-top: 5px; /* Adjust the spacing between buttons */
 }
 
 .navigation ul img {
@@ -306,27 +307,13 @@ form a:hover {
 
 /* Button Deze Button Ligt bij de privacy page */
 
-.settings{
-  display: flex;
-  justify-content: center;
-  width: 200px; /* Set the width of the block */
-  height: 200px; /* Set the height of the block */
-  background-color: rgba(255, 0, 0, 0.5); /* Set transparent red background */
-  margin: 20px; /* Add margin for spacing */
-  padding: 10px; /* Add padding for inner space */
-  border: 2px solid #000; /* Add a border with black color */
-  border-radius: 10px; /* Add border-radius for rounded corners */
-  text-align: center; /* Center the text horizontally */
-  line-height: 1.5; /* Adjust line-height based on content */
-  color: #fff; /* Set the text color to white */
-}
 
 .formam {
   width: 300px;
   margin: 0 auto;
   padding: 30px;
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px #889BE7;
 }
 
 .formam label {
@@ -374,24 +361,26 @@ form a:hover {
   background-color: #c9302c; /* Darker red color for delete button on hover */
 }
 
-
-
-
 .footer{
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 30px;
   background-color: #5671DC;
   color: white;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
-
-
-.footer:visited{
-  color: inherit;
+.gitbtn {
+  /* Add your existing button styles here */
+  color: whitesmoke; /* Set your default text color */
+  transition: color 0.3s; /* Only transition the text color on hover */
+  text-decoration: none;
 }
 
+.gitbtn:hover {
+  color: #889BE7; /* Set the text color on hover */
+}
