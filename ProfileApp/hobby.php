@@ -36,17 +36,17 @@ $hobbies = getHobbies($username);
 <h1>Your Hobbies</h1>
 
     <!-- Form for adding and deleting hobbies -->
-    <form method="post">
-        <!-- Input field for adding new hobby -->
-        <label for="new_hobby">Add a new hobby:</label>
-        <input type="text" id="new_hobby" name="new_hobby">
-        <button type="submit" value="Add">Add</button>
+    <form method="post" class="formam"> 
+    <!-- Input field for adding new hobby -->
+    <label for="new_hobby">Add a new hobby:</label>
+    <input type="text" id="new_hobby" name="new_hobby">
+    <button type="submit" value="Add" class="common-button">Add</button>
 
-        <!-- Input field for deleting hobby -->
-        <label for="delete_hobby">Delete a hobby:</label>
-        <input type="text" id="delete_hobby" name="delete_hobby">
-        <button type="submit" value="Delete" class="deletebutton">Delete</button>
-    </form>
+    <!-- Input field for deleting hobby -->
+    <label for="delete_hobby">Delete a hobby:</label>
+    <input type="text" id="delete_hobby" name="delete_hobby">
+    <button type="submit" value="Delete" class="common-button deletebutton">Delete</button>
+</form>
 
 <!-- List of hobbies -->
 <ul classname="educationlist">

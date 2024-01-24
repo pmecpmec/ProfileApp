@@ -306,6 +306,73 @@ form a:hover {
 
 /* Button Deze Button Ligt bij de privacy page */
 
+.settings{
+  display: flex;
+  justify-content: center;
+  width: 200px; /* Set the width of the block */
+  height: 200px; /* Set the height of the block */
+  background-color: rgba(255, 0, 0, 0.5); /* Set transparent red background */
+  margin: 20px; /* Add margin for spacing */
+  padding: 10px; /* Add padding for inner space */
+  border: 2px solid #000; /* Add a border with black color */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  text-align: center; /* Center the text horizontally */
+  line-height: 1.5; /* Adjust line-height based on content */
+  color: #fff; /* Set the text color to white */
+}
+
+.formam {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formam label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formam input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.formam button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-left: auto;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.common-button {
+  width: 100%;
+  padding: 10px;
+  margin-left: auto;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.common-button:hover {
+  background-color: #45a049;
+}
+
+.deletebutton {
+  background-color: #d9534f; /* Red color for delete button */
+}
+
+.deletebutton:hover {
+  background-color: #c9302c; /* Darker red color for delete button on hover */
+}
 
 
 
@@ -328,17 +395,3 @@ form a:hover {
   color: inherit;
 }
 
-.settings{
-  display: flex;
-  justify-content: center;
-  width: 200px; /* Set the width of the block */
-  height: 200px; /* Set the height of the block */
-  background-color: rgba(255, 0, 0, 0.5); /* Set transparent red background */
-  margin: 20px; /* Add margin for spacing */
-  padding: 10px; /* Add padding for inner space */
-  border: 2px solid #000; /* Add a border with black color */
-  border-radius: 10px; /* Add border-radius for rounded corners */
-  text-align: center; /* Center the text horizontally */
-  line-height: 1.5; /* Adjust line-height based on content */
-  color: #fff; /* Set the text color to white */
-}

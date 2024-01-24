@@ -24,21 +24,19 @@ $workExperiences = getWorkExperiences($username);
 <h1>Your Work Experiences</h1>
 
 
-
-<form method="post">
-   
+<form method="post" class="formam"> 
     <label for="new_job">Add a new job:</label>
     <input type="text" id="new_job" name="new_job">
 
     <label for="new_company">Company name:</label>
     <input type="text" id="new_company" name="new_company">
     
-    <button type="submit" value="Add">Add</button>
+    <button type="submit" value="Add" class="common-button">Add</button>
 
     <label for="delete_job">Delete a job:</label>
     <input type="text" id="delete_job" name="delete_job">
     
-    <button type="submit" value="Delete" class="deletebutton">Delete</button>
+    <button type="submit" value="Delete" class="common-button deletebutton">Delete</button>
 </form>
 
 <ul classname="educationlist">
