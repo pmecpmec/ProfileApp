@@ -39,36 +39,48 @@ include 'navigation/nav.php';
 </head>
 <body>
 
-<div class="header">
-    <h1>Profielbeheer</h1>
-</div>
+<h1> Mijn Profiel </h1>
 
 <div class="profile-container">
-    <h2>Mijn Profiel</h2>
-
+<img src="img/ebram.jpeg" class="ebram"> 
+<img src="img/potlood.jpg"class="potlood">
     <!-- Profielinformatie -->
     <div class="profile-info">
         
     </div>
 
     <!-- Profiel bewerken formulier -->
-    <div class="edit-profile-form">
-        <h3>Bewerk Profiel</h3>
-        <form method="POST" action="">
-            <label for="school">Schoolprestaties:</label>
-            <input type="text" id="school" name="school" value="<?php echo isset($_SESSION['profile']['school']) ? $_SESSION['profile']['school'] : ''; ?>" required>
+    <div>
+        <h1> Ebram Moawad </h1>
 
-            <label for="work">Werkervaring:</label>
-            <input type="text" id="work" name="work" value="<?php echo isset($_SESSION['profile']['work']) ? $_SESSION['profile']['work'] : ''; ?>" required>
-
-            <label for="hobbies">Hobby's:</label>
-            <input type="text" id="hobbies" name="hobbies" value="<?php echo isset($_SESSION['profile']['hobbies']) ? $_SESSION['profile']['hobbies'] : ''; ?>" required>
-
-            <button type="submit">Opslaan</button>
-        </form>
+        <h3> Christelijke Schol Windesheim </h3>
+        <h3> Stomerij Droog Cleaning Service </h3> 
+        
     </div>
 </div>
+    <div class="containers">
+        <div class="education-container">
+        <h1> Education </h1>
+        <hr>
+        <h3> MBO 4 Hotel Managment / Entrepeneur </h3>
+        <h3> AD Software Developer</h3>
+        </div>
 
-<script src="app.js"></script>
+        <div class="work-container">
+        <h1> Work Experience </h1>
+        <hr>
+        <h3> Engineer at Schiphol Airport</h3>
+        <h3> Folding Clothes at Stomerij </h3>
+
+        </div>
+
+        <div class="hobby-container">
+        <h1> Hobbies </h1>
+        <hr>
+        <h3> Playing Football at Real Madrid </h3>
+        <h3> Fitness at the Basicfit</h3>
+        <h3> Watching Football</h3>
+         </div>
+    </div>
 </body>
 </html>

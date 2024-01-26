@@ -1,3 +1,8 @@
+
+
+
+
+
 body {
   text-align: center;
   background-color: #f0f2f5;
@@ -8,7 +13,7 @@ body {
 /* header */
 .header {
   display: flex;
-  justify-content: center; /* Align items to the left and right ends */
+  justify-content: center; 
   align-items: center;
   padding: 10px 20px;
   background-color: #5671DC;
@@ -221,9 +226,7 @@ form label {
   margin-bottom: 5px;
 }
 
-/* The CSS code `form input[type="username"], form input[type="text"], form input[type="password"]` is
-targeting the input fields within a form that have the attribute `type` set to "username", "text",
-or "password". */
+
 form input[type="username"],
 form input[type="text"],
 form input[type="password"] {
@@ -232,11 +235,7 @@ form input[type="password"] {
   border: 1px solid #ccc;
 }
 
-/* The CSS code `form button` is targeting the `<button>` element within a `<form>` element. It sets
-the padding to 10 pixels on the top and bottom, and 20 pixels on the left and right. It sets the
-background color to #4CAF50 (a shade of green), the text color to white, and removes the border. It
-sets the cursor to a pointer, adds a margin of 15 pixels around the button, creating space between
-the button and other elements. */
+
 form button {
   padding: 10px 20px;
   background-color: #4CAF50;
@@ -298,7 +297,7 @@ form a:hover {
   /*margin-top: 30px;*/
 }
 
-/* Button Deze Button Ligt bij de privacy page */
+
 
 
 
@@ -348,11 +347,11 @@ form a:hover {
 }
 
 .deletebutton {
-  background-color: #d9534f; /* Red color for delete button */
+  background-color: #d9534f; 
 }
 
 .deletebutton:hover {
-  background-color: #c9302c; /* Darker red color for delete button on hover */
+  background-color: #c9302c; 
 }
 
 .footer{
@@ -369,41 +368,60 @@ form a:hover {
 }
 
 .gitbtn {
-  /* Add your existing button styles here */
-  color: whitesmoke; /* Set your default text color */
-  transition: color 0.3s; /* Only transition the text color on hover */
+  
+  color: whitesmoke; 
+  transition: color 0.3s; 
   text-decoration: none;
 }
 
 .gitbtn:hover {
-  color: #889BE7; /* Set the text color on hover */
+  color: #889BE7; 
 }
-
+.containers{
+  display: flex;
+}
 .profile-container {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #889BE7;
+}
+
+.education-container{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #889BE7;
+}
+.work-container{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #889BE7;
+}
+.hobby-container{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #889BE7;
 }
 
 .profile-info {
   margin-bottom: 20px;
 }
 
-.edit-profile-form {
-  background-color: #f0f0f0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px
-}
-   /* Style for the dropdown */
+   
    .dropdown {
     position: relative;
     display: inline-block;
     
   }
 
-  /* Style for the dropdown button */
+ 
   .dropbtn {
     background-color: white;
     color: white;
@@ -445,3 +463,15 @@ form a:hover {
   }
 
  
+.ebram{
+  max-width: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.potlood{
+  position: absolute;
+  max-width: 30px;
+  
+}
+

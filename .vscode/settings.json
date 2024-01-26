@@ -13,5 +13,6 @@
             "username": "root",
             "database": "profileapp"
         }
-    ]
+    ],
+    "docwriter.language": "Dutch"
 }

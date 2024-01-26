@@ -23,9 +23,11 @@ include 'navigation/nav.php';
 
 
 <!-- Welcome message -->
-<h1>Welcome to your profile</h1>
+<h1>Welcome to ProfilePlus!</h1>
 
+<h3> On this website you can create your own profile and connect with your friends! </h3>
 </body>
+
 
 <!-- Include the footer -->
 <?php
