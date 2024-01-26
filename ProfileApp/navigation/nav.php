@@ -16,6 +16,7 @@
           <li><a href="education.php"><button>Education</button></a></li>
           <li><a href="hobby.php"><button>My hobby</button></a></li>
           <li><a href="work.php"><button>My Work</button></a></li>
+          <li><a href="Profile.php"><button>My Profile</button></a></li>
           <li><a href="Logout.php"><button>Log out</button></a>
          
 

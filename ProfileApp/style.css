@@ -303,20 +303,7 @@ form a:hover {
 
 /* Button Deze Button Ligt bij de privacy page */
 
-.settings{
-  display: flex;
-  justify-content: center;
-  width: 200px; /* Set the width of the block */
-  height: 200px; /* Set the height of the block */
-  background-color: rgba(255, 0, 0, 0.5); /* Set transparent red background */
-  margin: 20px; /* Add margin for spacing */
-  padding: 10px; /* Add padding for inner space */
-  border: 2px solid #000; /* Add a border with black color */
-  border-radius: 10px; /* Add border-radius for rounded corners */
-  text-align: center; /* Center the text horizontally */
-  line-height: 1.5; /* Adjust line-height based on content */
-  color: #fff; /* Set the text color to white */
-}
+
 
 .formam {
   width: 300px;
@@ -393,4 +380,22 @@ form a:hover {
 
 .gitbtn:hover {
   color: #889BE7; /* Set the text color on hover */
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.profile-info {
+  margin-bottom: 20px;
+}
+
+.edit-profile-form {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px
 }
