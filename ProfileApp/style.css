@@ -1,8 +1,4 @@
 
-
-
-
-
 body {
   text-align: center;
   background-color: #f0f2f5;
@@ -10,7 +6,8 @@ body {
   margin: auto;
 }
 
-/* header */
+
+
 .header {
   display: flex;
   justify-content: center; 
@@ -59,9 +56,6 @@ body {
   background-color: #3498db;
   color: #fff;
 }
-
-
-
 
 h1,
 h3 {
@@ -161,9 +155,6 @@ h3 {
 }
 
 
-/* AboutMe CSS */
-
-/* grid */
 .grid-container {
   display: grid;
   grid-template-columns: auto 70% auto;
@@ -244,7 +235,7 @@ form button {
   cursor: pointer;
   margin: 15px;
 }
-
+/* ///////////////////////////////////////////////////// */
 
 
 .deletebutton {
@@ -419,6 +410,7 @@ form a:hover {
     position: relative;
     display: inline-block;
     
+    
   }
 
  
@@ -444,7 +436,7 @@ form a:hover {
     
   }
 
-  /* Style for the links inside the dropdown */
+  
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -452,12 +444,12 @@ form a:hover {
     display: block;
   }
 
-  /* Change color on hover */
+
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
 
-  /* Show the dropdown menu on hover */
+ 
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -469,9 +461,12 @@ form a:hover {
   position: relative;
 }
 
+/* De klasse `.potlood` definieert de stijl voor een element met de klasse "potlood". Het stelt de
+positie van het element in op absoluut, wat betekent dat het wordt gepositioneerd ten opzichte van
+zijn dichtstbijzijnde voorouder. De eigenschap `max-with` stelt de maximale breedte van het element
+in op 30 pixels. */
 .potlood{
   position: absolute;
   max-width: 30px;
-  
 }
 
