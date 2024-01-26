@@ -1,7 +1,6 @@
 
 <footer>
     <div class="footer">
-        <p>&copy; 2023 ProfielPlus. Alle rechten voorbehouden.</p>
-        <p>info@profielplus.com</p>
+        <a class="gitbtn" href="https://github.com/pmecpmec/ProfileApp">Github</a>
     </div>
 </footer>
