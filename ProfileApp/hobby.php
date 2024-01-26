@@ -1,63 +1,63 @@
 <?php
-// Start a new session
+// Start een nieuwe sessie
 session_start();
 
-// Include the file 'hobby.inc.php' which contains functions for managing hobby information
+// Inclusief het bestand 'hobby.inc.php' dat functies bevat voor het beheren van hobby-informatie
 require_once 'include/hobby.inc.php';
 
-// Include the navigation bar
+// Inclusief de navigatiebalk
 include 'navigation/nav.php';
 
-// Get the username from the session
+// Haal de gebruikersnaam op uit de sessie
 $username = $_SESSION['username'];
 
-// Check if the form has been submitted
+// Controleer of het formulier is ingediend
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // If the 'new_hobby' field is not empty, add the new hobby to the database
+    // Als het veld 'new_hobby' niet leeg is, voeg dan de nieuwe hobby toe aan de database
     if (!empty($_POST['new_hobby'])) {
         addHobby($username, $_POST['new_hobby']);
     }
 
-    // If the 'delete_hobby' field is not empty, delete the specified hobby from the database
+    // Als het veld 'delete_hobby' niet leeg is, verwijder dan de gespecificeerde hobby uit de database
     if (!empty($_POST['delete_hobby'])) {
         deleteHobby($username, $_POST['delete_hobby']);
     }
 }
 
-// Get the user's hobby information from the database
+// Haal de hobby-informatie van de gebruiker op uit de database
 $hobbies = getHobbies($username);
 ?>
 
-<!-- Start of HTML -->
+<!-- Start van HTML -->
 <!DOCTYPE html>
 <html>
 <body>
-<!-- Title of the page -->
-<h1>Your Hobbies</h1>
+<!-- Titel van de pagina -->
+<h1>Your hobby</h1>
 
-    <!-- Form for adding and deleting hobbies -->
+    <!-- Formulier voor het toevoegen en verwijderen van hobby's -->
     <form method="post" class="formam"> 
-    <!-- Input field for adding new hobby -->
+    <!-- Invoerveld voor het toevoegen van een nieuwe hobby -->
     <label for="new_hobby">Add a new hobby:</label>
     <input type="text" id="new_hobby" name="new_hobby">
-    <button type="submit" value="Add" class="common-button">Add</button>
+    <button type="submit" value="add" class="common-button">Add</button>
 
-    <!-- Input field for deleting hobby -->
-    <label for="delete_hobby">Delete a hobby:</label>
+    <!-- Invoerveld voor het verwijderen van een hobby -->
+    <label for="delete_hobby">Delete hobby:</label>
     <input type="text" id="delete_hobby" name="delete_hobby">
-    <button type="submit" value="Delete" class="common-button deletebutton">Delete</button>
+    <button type="submit" value="delete" class="common-button deletebutton">Delete</button>
 </form>
 
-<!-- List of hobbies -->
+<!-- Lijst van hobby's -->
 <ul classname="educationlist">
-<!-- PHP code to display each hobby -->
+<!-- PHP-code om elke hobby weer te geven -->
 <?php foreach ($hobbies as $hobby): ?>
     <li><?php echo htmlspecialchars($hobby['hobby_name']); ?></li>
 <?php endforeach; ?>
 </ul>
 
 </body>
-<!-- Include the footer -->
+<!-- Inclusief de voettekst -->
 <?php
 include 'navigation/footer.php'
 ?>

@@ -20,14 +20,14 @@ include 'navigation/nav.php';
 <body>
 
 <div>
-    <!-- Title of the page -->
+    <!-- Title van pagina -->
     <h1 style="text-align:center; margin-top:30px;">Register Here!</h1>
 
-    <!-- Start of the form -->
+    <!-- Start van de form -->
     <div>
         <div>
             <?php
-                // If there's an error message in the session, display it
+                // Als er een error is dan geeft hij een message in de session.
                 if(isset($_SESSION['error'])){
                     echo "
                         <div>
@@ -35,11 +35,11 @@ include 'navigation/nav.php';
                         </div>
                     ";
   
-                    // Remove the error message from the session
+                    // Verwijder de error message van de session
                     unset($_SESSION['error']);
                 }
   
-                // If there's a success message in the session, display it
+                // Als het success is geef de message in de session.
                 if(isset($_SESSION['success'])){
                     echo "
                         <div>
@@ -47,33 +47,38 @@ include 'navigation/nav.php';
                         </div>
                     ";
   
-                    // Remove the success message from the session
+                    // verwijder de success message van de session
                     unset($_SESSION['success']);
                 }
             ?>
             
             <div>
                 <div>
-                    <!-- The form posts to 'include/register.inc.php' -->
+                    <!-- De form posts to 'include/register.inc.php' -->
      <div class="register-container">
     <form method="POST" action="include/register.inc.php">
-        <!-- Input field for the username -->
+     <!-- Invoerveld voor de gebruikersnaam -->
         <div>
             <label for="username">Username</label>
             <input type="username" id="username" name="username" value="<?php echo (isset($_SESSION['username'])) ? $_SESSION['username'] : ''; unset($_SESSION['username']) ?>" placeholder="username" required>
         </div>
-        <!-- Input field for the password -->
+       <!-- Invoerveld voor de wachtwoord -->
         <div>
             <label for="pwd">Password</label>
             <input type="password" id="pwd" name="pwd" value="<?php echo (isset($_SESSION['pwd'])) ? $_SESSION['pwd'] : ''; unset($_SESSION['pwd']) ?>" placeholder="password" required>
         </div>
-        <!-- Input field for confirming the password -->
+        
+        <div>
+             <label for="confirm_pwd">Confirm Password</label>
+             <input type="password" id="confirm_pwd" name="confirm_pwd" placeholder="Confirm Password" required>
+        </div>
+      
 
         <hr>
 
         <div>
             <button type="submit" name="register">Signup</button>
-            <!-- Link to the login page -->
+            <!-- Link naar de login page -->
             <a href="login.php">Back to login</a>
         </div>
     </form>
@@ -84,7 +89,7 @@ include 'navigation/nav.php';
     </div>
 </div>
 </body>
-<!-- Include the footer -->
+<!-- de footer -->
 <?php
 include 'navigation/footer.php'
 ?>

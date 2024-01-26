@@ -22,14 +22,14 @@ include 'navigation/nav.php';
 
 
 
-<!-- Welcome message -->
+<!-- Welkoms bericht -->
 <h1>Welcome to ProfilePlus!</h1>
 
 <h3> On this website you can create your own profile and connect with your friends! </h3>
 </body>
 
 
-<!-- Include the footer -->
+<!--de footer -->
 <?php
 include 'navigation/footer.php'
 ?>

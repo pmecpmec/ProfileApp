@@ -1,63 +1,62 @@
 <?php
-// Start a new session
+// Start een nieuwe sessie
 session_start();
 
-// Include the file 'education.inc.php' which contains functions for managing education information
+// Inclusief het bestand 'education.inc.php' dat functies bevat voor het beheren van onderwijsinformatie
 require_once 'include/education.inc.php';
 
-// Include the navigation bar
+// Inclusief de navigatiebalk
 
-
-// Get the username from the session
+// Haal de gebruikersnaam op uit de sessie
 $username = $_SESSION['username'];
 
-// Check if the form has been submitted
+// Controleer of het formulier is ingediend
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // If the 'new_education' field is not empty, add the new education to the database
+    // Als het veld 'new_education' niet leeg is, voeg dan het nieuwe onderwijs toe aan de database
     if (!empty($_POST['new_education'])) {
         addEducation($username, $_POST['new_education']);
     }
 
-    // If the 'delete_education' field is not empty, delete the specified education from the database
+    // Als het veld 'delete_education' niet leeg is, verwijder dan het gespecificeerde onderwijs uit de database
     if (!empty($_POST['delete_education'])) {
         deleteEducation($username, $_POST['delete_education']);
     }
 }
 
-// Get the user's education information from the database
-$Educations = getEducation($username);
+// Haal de onderwijsinformatie van de gebruiker op uit de database
+$educations = getEducation($username);
 ?>
 
-<!-- Start of HTML -->
+<!-- Start van HTML -->
 <!DOCTYPE html>
 <html>
 <body>
 <?php include 'navigation/nav.php'; ?>
-<!-- Title of the page -->
-<h1>Your education</h1>
+<!-- Titel van de pagina -->
+<h1>Your Education</h1>
 
-    <!-- Form for adding and deleting education -->
+    <!-- Formulier voor het toevoegen en verwijderen van onderwijs -->
  <form method="post" class="formam">
-    <!-- Input field for adding new education -->
-    <label for="new-education">Add a new education:</label>
+    <!-- Invoerveld voor het toevoegen van nieuw onderwijs -->
+    <label for="new-education">Add education:</label>
     <input type="text" id="new-education" name="new-education">
     <button type="submit" name="add-education" class="common-button">Add</button>
 
-    <!-- Input field for deleting education -->
+    <!-- Invoerveld voor het verwijderen van onderwijs -->
     <label for="delete-education">Delete education:</label>
     <input type="text" id="delete-education" name="delete-education">
     <button type="submit" name="delete-education" class="common-button deletebutton">Delete</button>
 </form>
-<!-- List of educations -->
+<!-- Lijst van onderwijs -->
 <ul classname="educationlist">
-<!-- PHP code to display each education -->
-<?php foreach ($Educations as $Education): ?>
-    <li><?php echo htmlspecialchars($Education['education_name']); ?></li>
+<!-- PHP-code om elk onderwijs weer te geven -->
+<?php foreach ($educations as $education): ?>
+    <li><?php echo htmlspecialchars($education['education_name']); ?></li>
 <?php endforeach; ?>
 </ul>
 
 </body>
-<!-- Include the footer -->
+<!-- Inclusief de voettekst -->
 <?php
 include 'navigation/footer.php'
 ?>

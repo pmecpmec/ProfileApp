@@ -7,7 +7,8 @@
     <nav class="navigation">
       
       <center>
-      <!--  The href attribute specifies the URL that the link should navigate to when clicked. -->
+     
+<!-- Het href-attribuut geeft de URL aan waarnaar de link moet navigeren wanneer erop wordt geklikt. -->
         <ul>
         <img src="./img/logo-no-background.png" class="header-logo" alt="Logo">
           <li><a href="home.php"><button>Home</button></a></li>
@@ -26,12 +27,12 @@
     </nav>
   </div>
   <div class="dropdown">
-    <!-- Add the dropdown button -->
+    <!-- Voegt een dropdown button -->
     <button class="dropbtn">Menu</button>
 
-    <!-- Create the dropdown content -->
+    <!-- maakt de dropdown content -->
     <div class="dropdown-content">
-      <!-- Add your list items inside the dropdown content -->
+      
       <a href="login.php">Login</a>
       <a href="index.php">Register</a>
       <a href="Logout.php">Log out</a>

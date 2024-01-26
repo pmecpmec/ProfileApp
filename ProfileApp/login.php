@@ -63,23 +63,23 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
     <h1 class="text-center" style="margin-top:30px;">Login</h1>
 </div>
 
-<!-- Form for logging in -->
+<!-- Form voor inloggen -->
 <div class="login-container">
     <form method="POST" action="login.php">
-        <!-- Input field for the username -->
-        <div>
+     <!-- Invoerveld voor de gebruikersnaam -->
+     <div>
             <label for="username">Username</label>
             <input type="username" id="username" name="username" value="<?php echo (isset($_SESSION['username'])) ? $_SESSION['username'] : ''; unset($_SESSION['username']) ?>" placeholder="Input username" required>
         </div>
-        <!-- Input field for the password -->
-        <div>
+       <!-- Invoerveld voor de wachtwoord -->
+       <div>
             <label for="pwd">Password</label>
             <input type="password" id="pwd" name="pwd" value="<?php echo (isset($_SESSION['password'])) ? $_SESSION['password'] : ''; unset($_SESSION['password']) ?>" placeholder="Input password" required>
         </div>
        
         <div>
             <button type="submit" name="login">Login</button>
-            <!-- Link to the registration page -->
+            <!-- Link naar registration page -->
             <a href="index.php">Register</a>
         </div>
     </form>

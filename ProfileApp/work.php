@@ -23,21 +23,24 @@ $workExperiences = getWorkExperiences($username);
 <body>
 <h1>Your Work Experiences</h1>
 
-
+<!-- Formulier voor het toevoegen en verwijderen van werkervaring -->
 <form method="post" class="formam"> 
+<!-- Invoerveld voor het toevoegen van een nieuwe baan -->
+
     <label for="new_job">Add a new job:</label>
     <input type="text" id="new_job" name="new_job">
-
+ <!-- Invoerveld voor de naam van het bedrijf -->
     <label for="new_company">Company name:</label>
     <input type="text" id="new_company" name="new_company">
-    
+    <!-- Knop om nieuwe werkervaring toe te voegen -->
     <button type="submit" value="Add" class="common-button">Add</button>
-
+<!-- Invoerveld voor het verwijderen van een baan -->
     <label for="delete_job">Delete a job:</label>
     <input type="text" id="delete_job" name="delete_job">
-    
+     <!-- Knop om werkervaring te verwijderen -->
     <button type="submit" value="Delete" class="common-button deletebutton">Delete</button>
 </form>
+<!-- Lijst van werkervaringen -->
 
 <ul classname="educationlist">
 <?php foreach ($workExperiences as $work): ?>
