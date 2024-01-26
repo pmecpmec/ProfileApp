@@ -1,4 +1,4 @@
-
+/* Body moet allemaal gecentreerd zijn, background in elke pagina dezelfde kleur, niet te vel wit dus een beetje grijs zodat het fijn is voor de ogen. */
 body {
   text-align: center;
   background-color: #f0f2f5;
@@ -6,8 +6,7 @@ body {
   margin: auto;
 }
 
-
-
+/*"We hebben gekozen voor een lichte kleur bij de header om een mooie uitstraling te creëren."*/
 .header {
   display: flex;
   justify-content: center; 
@@ -17,8 +16,7 @@ body {
   color: white;
   height: auto;
 }
-
-
+/* We hebben gebruik gemaakt van een unordered list omdat het niet gesoorteerd hoeft te worden met getallen. */
 .navigation ul {
   display: flex;
   justify-content: center;
@@ -28,11 +26,12 @@ body {
   padding: 0;
 }
 
+
 .navigation ul li {
   display: inline;
   margin-right: 20px
 }
-
+/* We willen dat de logo links staat zodat de naam bekender wordt./ */
 .navigation ul img {
   max-width: 100px;
   height: auto;
@@ -40,6 +39,7 @@ body {
  margin-left: auto;
 }
 
+/* de button hebben laten matchen met de header zelf zodat het goed overeen komt met elkaar*/
 .header button {
   display: inline-block;
   padding: 10px 20px;
@@ -51,7 +51,7 @@ body {
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
-
+/* We hebben een hover gecreeerd omdat het een mooi effect geeft aan de header. */
 .header button:hover {
   background-color: #3498db;
   color: #fff;
@@ -62,14 +62,7 @@ h3 {
 
   text-align: center;
 }
-
-.background-home {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items:center
-}
+/* We hebben een box om de login form heen gezet zodat de pagina niet al te leeg is, ook hebben we een mooie shadow aan de box toegevoegd */
 
 .login-container {
   width: 300px;
@@ -112,7 +105,7 @@ h3 {
 .login-container a:hover {
   text-decoration: underline;
 }
-
+/* We hebben een box om de register form heen gezet zodat de pagina niet al te leeg is, ook hebben we een mooie shadow aan de box toegevoegd */
 .register-container {
   width: 300px;
   margin: 0 auto;
@@ -155,54 +148,12 @@ h3 {
 }
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto 70% auto;
-  background-color: lightgrey;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: lightgrey;
-  border: white;
-  padding: 20px;
-  margin: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-/* banner */
-.banner-container {
-  display: grid;
-  grid-template-columns: auto 70% auto;
-  background-color: white;
-  padding: 10px;
-}
-
-.banner {
-  background-color: white;
-  border: white;
-  padding: 20px;
-  margin: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.banner-grid-item {
-  background-color: white;
-  border: white;
-  padding: 20px;
-  margin: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-/* round profile img */
+/* We hebben de profiel foto een maximale radius gegeven zodat het niet over de gehele beeldscherm is verspreid. */
 img.profilePicture {
   border-radius: 50%;
 }
-/* New added CSS  */
 
+/* De form word gebruikt in de login en registratie, het heeft een overzichtelijke formulier zodat de gebruiker zich kan aanmelden of registreren. */
 form {
   width: 300px;
   margin: 0 auto;
@@ -217,7 +168,6 @@ form label {
   margin-bottom: 5px;
 }
 
-
 form input[type="username"],
 form input[type="text"],
 form input[type="password"] {
@@ -226,7 +176,7 @@ form input[type="password"] {
   border: 1px solid #ccc;
 }
 
-
+/* De groene knop wordt gebruikt om data toe te voegen aan de database */
 form button {
   padding: 10px 20px;
   background-color: #4CAF50;
@@ -235,17 +185,14 @@ form button {
   cursor: pointer;
   margin: 15px;
 }
-/* ///////////////////////////////////////////////////// */
 
 
+/* De rode button word gebruikt om dingen te verwijderen. */
 .deletebutton {
   background-color: red;
 }
 
-.deletebutton:hover {
-  background-color: rgb(203, 24, 24);
 
-}
 
 
 form button:hover {
@@ -264,34 +211,7 @@ form a:hover {
   text-decoration: underline;
 }
 
-/* cards */
-.card {
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 100%;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 14px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 30px;
-}
-
-.title {
-  font-size: 20px;
-  /*margin-top: 30px;*/
-}
-
-
-
-
-
+/* container moet in het midden van de pagina zitten  */
 .formam {
   width: 300px;
   margin: 0 auto;
@@ -300,6 +220,8 @@ form a:hover {
   box-shadow: 2px 2px 5px #889BE7;
 }
 
+  /* formam wordt gebruikt bij de education, hobby en work, het is een mooie container rondom het formulier van de pagina. Het heeft een mooie shadow erachter. 
+  En een klein beetje licht blauw  */
 .formam label {
   display: block;
   margin-bottom: 10px;
@@ -322,7 +244,7 @@ form a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-
+/* Dit is de toevoeg knop bij education, work en hobby. Hij is groen zodat mensen weten dat het word gebruikt om dingen toe te toevoegen. */
 .common-button {
   width: 100%;
   padding: 10px;
@@ -332,19 +254,20 @@ form a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-
+/* Bij de hover wordt ie iets donkerder. */
 .common-button:hover {
-  background-color: #45a049;
+  background-color: #1c7c23;
 }
-
+/* Dit is de delete knop, hij is rood zodat mensen weten dat je dingen kan verwijderen. */
 .deletebutton {
   background-color: #d9534f; 
 }
-
+/* Bij de hover wordt de knop iets donkerder rood. */
 .deletebutton:hover {
   background-color: #c9302c; 
 }
 
+/* De footer matcht met de header qua kleur. */
 .footer{
   position: fixed;
   bottom: 0;
@@ -357,20 +280,20 @@ form a:hover {
   text-decoration: none;
   color: white;
 }
-
+/* Button die je doorlinkt naar de repository van onze github. */
 .gitbtn {
-  
   color: whitesmoke; 
   transition: color 0.3s; 
   text-decoration: none;
+  max-height: 35px;
 }
+/* containers zijn de kleine vierkanten op de profiel pagina, hierin word alles 
+overzichtelijk verteld over de gebruiker */
 
-.gitbtn:hover {
-  color: #889BE7; 
-}
 .containers{
   display: flex;
 }
+/* Dit is de container van het profiel. Het heeft een kleine grijze shadow. */
 .profile-container {
   max-width: 800px;
   margin: 20px auto;
@@ -378,7 +301,7 @@ form a:hover {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px #889BE7;
 }
-
+/* Dit is de container van het profiel. Het heeft een kleine grijze shadow. */
 .education-container{
   max-width: 800px;
   margin: 20px auto;
@@ -386,6 +309,7 @@ form a:hover {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px #889BE7;
 }
+/* Dit is de container van de werkervaring. Het heeft een kleine grijze shadow. */
 .work-container{
   max-width: 800px;
   margin: 20px auto;
@@ -393,6 +317,7 @@ form a:hover {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px #889BE7;
 }
+/* Dit is de container van de hobby's. Het heeft een kleine grijze shadow. */
 .hobby-container{
   max-width: 800px;
   margin: 20px auto;
@@ -401,16 +326,10 @@ form a:hover {
   box-shadow: 2px 2px 5px #889BE7;
 }
 
-.profile-info {
-  margin-bottom: 20px;
-}
-
-   
+/* dit is de dropdown waarin de login en registratie word laten zien.  */
    .dropdown {
     position: relative;
     display: inline-block;
-    
-    
   }
 
  
@@ -420,7 +339,6 @@ form a:hover {
     padding: 10px;
     border: none;
     cursor: pointer;
-  
   }
 
   /* Style for the dropdown content */
@@ -433,7 +351,6 @@ form a:hover {
     z-index: 2;
     text-align: left;
     max-width: 30%;
-    
   }
 
   
@@ -454,17 +371,14 @@ form a:hover {
     display: block;
   }
 
- 
+ /* Dit is de profielfoto van ebram maar dit word als voorbeeld gebruikt, wanneer een gebruiker zijn profielfoto insteld. */
 .ebram{
   max-width: 150px;
   border-radius: 50%;
   position: relative;
 }
 
-/* De klasse `.potlood` definieert de stijl voor een element met de klasse "potlood". Het stelt de
-positie van het element in op absoluut, wat betekent dat het wordt gepositioneerd ten opzichte van
-zijn dichtstbijzijnde voorouder. De eigenschap `max-with` stelt de maximale breedte van het element
-in op 30 pixels. */
+/* Dit is de potlood bij de profiel pagina, hiermee kan je de profiel foto editten. */
 .potlood{
   position: absolute;
   max-width: 30px;

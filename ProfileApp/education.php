@@ -6,7 +6,7 @@ session_start();
 require_once 'include/education.inc.php';
 
 // Include the navigation bar
-include 'navigation/nav.php';
+
 
 // Get the username from the session
 $username = $_SESSION['username'];
@@ -32,6 +32,7 @@ $Educations = getEducation($username);
 <!DOCTYPE html>
 <html>
 <body>
+<?php include 'navigation/nav.php'; ?>
 <!-- Title of the page -->
 <h1>Your education</h1>
 

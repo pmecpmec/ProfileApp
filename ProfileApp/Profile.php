@@ -44,16 +44,12 @@ include 'navigation/nav.php';
 <div class="profile-container">
 <img src="img/ebram.jpeg" class="ebram"> 
 <img src="img/potlood.jpg"class="potlood">
-    <!-- Profielinformatie -->
-    <div class="profile-info">
-        
-    </div>
 
     <!-- Profiel bewerken formulier -->
     <div>
         <h1> Ebram Moawad </h1>
 
-        <h3> Christelijke Schol Windesheim </h3>
+        <h3> Christelijke School Windesheim </h3>
         <h3> Stomerij Droog Cleaning Service </h3> 
         
     </div>
