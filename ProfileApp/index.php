@@ -55,34 +55,29 @@ include 'navigation/nav.php';
             <div>
                 <div>
                     <!-- The form posts to 'include/register.inc.php' -->
-                    <form method="POST" action="include/register.inc.php">
-                        <!-- Input field for the username -->
-                        <div>
-                            <label for="username">Username</label>
-                            <input type="username" id="username" name="username" value="<?php echo (isset($_SESSION['username'])) ? $_SESSION['username'] : '';
-                            unset($_SESSION['username']) ?>" placeholder="username" required>
-                        </div>
-                        <!-- Input field for the password -->
-                        <div>
-                            <label for="pwd">Password</label>
-                            <input type="password" id="pwd" name="pwd" value="<?php echo (isset($_SESSION['pwd'])) ? $_SESSION['pwd'] : '';
-                            unset($_SESSION['pwd']) ?>" placeholder=" password" required>
-                        </div>
-                        <!-- Input field for confirming the password -->
-                        <div>
-                            <label for="pwd_confirm">Confirm Password</label>
-                            <input type="password" id="pwd_confirm" name="pwd_confirm" value="<?php echo (isset($_SESSION['pwd_confirm'])) ? $_SESSION['pwd_confirm'] : '';
-                            unset($_SESSION['pwd_confirm']) ?>" placeholder="confirm password">
-                        </div>
-                      
-                        <hr>
-                      
-                        <div>
-                            <button type="submit" name="register">Signup</button>
-                            <!-- Link to the login page -->
-                            <a href="login.php">Back to login</a>
-                        </div>
-                    </form>
+     <div class="register-container">
+    <form method="POST" action="include/register.inc.php">
+        <!-- Input field for the username -->
+        <div>
+            <label for="username">Username</label>
+            <input type="username" id="username" name="username" value="<?php echo (isset($_SESSION['username'])) ? $_SESSION['username'] : ''; unset($_SESSION['username']) ?>" placeholder="username" required>
+        </div>
+        <!-- Input field for the password -->
+        <div>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" value="<?php echo (isset($_SESSION['pwd'])) ? $_SESSION['pwd'] : ''; unset($_SESSION['pwd']) ?>" placeholder="password" required>
+        </div>
+        <!-- Input field for confirming the password -->
+
+        <hr>
+
+        <div>
+            <button type="submit" name="register">Signup</button>
+            <!-- Link to the login page -->
+            <a href="login.php">Back to login</a>
+        </div>
+    </form>
+</div>
                 </div>
             </div>
         </div>

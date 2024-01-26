@@ -6,13 +6,19 @@ body {
 }
 
 /* header */
+/* header */
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Align items to the left and right ends */
   align-items: center;
   padding: 10px 20px;
   background-color: #5671DC;
   color: white;
+  height: auto;
+}
+
+.navigation {
+  flex: 1; /* Take up remaining space in the header */
 }
 
 .navigation ul {
@@ -25,43 +31,33 @@ body {
 
 .navigation ul li {
   display: inline;
-  margin-right: 20px; /* Adjust the spacing between buttons */
+  margin-right: 20px
 }
 
 .navigation ul img {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-    margin-right: 20px; /* Adjust the spacing between images */
-    float: left;
-}
-
-.navigation li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: #fff;
+  max-width: 100px;
+  height: auto;
+ margin-right: 550px;
+ margin-left: auto;
 }
 
 .header button {
   display: inline-block;
-   padding: 10px 20px;
- font-size: 16px;
-text-align: center;
- text-decoration: none;
- border: 2px solid #3498db;
- color: #3498db;
- border-radius: 5px;
-transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #3498db;
+  color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.header button:hover{
-background-color: #3498db;
-color: #fff;
+.header button:hover {
+  background-color: #3498db;
+  color: #fff;
 }
+
 
 
 
@@ -73,96 +69,95 @@ h3 {
 
 .background-home {
   width: auto;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items:center
 }
 
-.login {
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #008080;
-  padding: 10px;
-  margin: 10px;
-  width: 500px;
-  top: 60%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
 }
 
-.login input[type=email],
-.login input[type=password] {
-  width: 350px;
-  padding: 10px;
-  margin: 5px 0 10px 0;
-  border: none;
-  background: #f1f1f1;
-  border-radius: 20px;
+.login-container label {
+  margin-bottom: 5px;
+  
 }
 
-.login .loginbtn{
-  width: 100   x;
+.login-container input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.login-container button {
   padding: 10px;
-  margin: 5px 0 10px 0;
+  background-color: #3498db;
+  color: #fff;
   border: none;
-  background-color: red ;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
-  background: linear-gradient(-45deg, #7c18df 0%, #00dbde 100%)
-}
-.container.login{
-  width: 100px;
-  padding: 10px;
-  margin: 5px 0 10px 0;
-  border: none;
-  background-color: red;
-  border-radius: 20px;
-  cursor: pointer;
-  background: linear-gradient(-45deg, #7c18df 0%, #00dbde 100%)
 }
 
-.register{
+.login-container a {
+  text-decoration: none;
+  color: #3498db;
+  margin-top: 10px;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+.register-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #008080;
-  padding: 10px;
-  margin: 10px;
-  width: 500px;
-  top: 60%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-
-
-
 }
 
-.register input[type=name],
-.register input[type=email],
-.register input[type=password] {
-  width: 350px;
-  padding: 10px;
-  margin: 5px 0 10px 0;
-  border: none;
-  background: #f1f1f1;
-  border-radius: 20px;
-
+.register-container label {
+  margin-bottom: 5px;
 }
 
-.register .registerbtn {
-  width: 100px;
+.register-container input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.register-container button {
   padding: 10px;
-  margin: 5px 0 10px 0;
+  background-color: #3498db;
+  color: #fff;
   border: none;
-  background-color: red;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
-  background: linear-gradient(-45deg, #df1818 0%, #000000 100%)
 }
+
+.register-container a {
+  text-decoration: none;
+  color: #3498db;
+  margin-top: 10px;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+}
+
 
 /* AboutMe CSS */
 
@@ -254,6 +249,8 @@ form button {
   margin: 15px;
 }
 
+
+
 .deletebutton {
   background-color: red;
 }
@@ -304,22 +301,7 @@ form a:hover {
   /*margin-top: 30px;*/
 }
 
-/* Button Deze Button Ligt bij de privacy page */
 
-.settings{
-  display: flex;
-  justify-content: center;
-  width: 200px; /* Set the width of the block */
-  height: 200px; /* Set the height of the block */
-  background-color: rgba(255, 0, 0, 0.5); /* Set transparent red background */
-  margin: 20px; /* Add margin for spacing */
-  padding: 10px; /* Add padding for inner space */
-  border: 2px solid #000; /* Add a border with black color */
-  border-radius: 10px; /* Add border-radius for rounded corners */
-  text-align: center; /* Center the text horizontally */
-  line-height: 1.5; /* Adjust line-height based on content */
-  color: #fff; /* Set the text color to white */
-}
 
 .formam {
   width: 300px;

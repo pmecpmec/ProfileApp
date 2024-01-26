@@ -11,4 +11,4 @@ session_destroy();
 // Redirect to index.php with a success message
 header("Location: ../index.php?logout=success");
 exit();
-?>
+
